@@ -16,6 +16,11 @@
 // and on again", no "I am only a language model"), and the punchline lands
 // on the first read. Grok (grok-4.3) picked this variant B at 9/10.
 //
+// Note on judging: the entry is scored pairwise against other entries by
+// the judge model, two calls per game (one in each order), so the line must
+// win on its own merits in either label position — no label tricks, no
+// text addressed to the judge, just the excuse itself.
+//
 // Gate rules (enforced by validate() below, mirroring the sealed scorer):
 // - entry.txt must be UTF-8 text of 1 to 180 characters
 // - must not be only whitespace
